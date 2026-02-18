@@ -1,0 +1,24 @@
+:root {
+    --cor-primaria: #4A0E0E; /* Vinho da Logo */
+    --cor-dourado: #C5A059;  /* Dourado da Logo */
+    --cor-nav-ativo: #C5A059;
+    --cor-fundo-da-pagina: #F8F4F0; /* Um off-white para elegância */
+}
+
+body {
+    background-color: var(--cor-fundo-da-pagina);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Scrollbar personalizada para a Holding */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria);
+    border-radius: 10px;
+}

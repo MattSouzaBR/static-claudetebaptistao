@@ -1,0 +1,90 @@
+/* Identidade Visual Claudete Baptistão */
+:root {
+    --cor-vinho: #4A0E0E;
+    --cor-dourado: #C5A059;
+    --cor-dourado-hover: #A68648;
+}
+
+body {
+    padding-top: 90px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero com o Glassmorphism de Luxo */
+.hero-header {
+    height: 85vh;
+    min-height: 550px;
+    background-position: center center !important;
+}
+
+.hero-glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 0 40px 40px 0; /* Design assimétrico moderno */
+    max-width: 700px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.1);
+    border-left: 12px solid var(--cor-dourado);
+    transform: translateX(-20px);
+}
+
+/* Botões Customizados */
+.btn-primary {
+    background-color: var(--cor-vinho) !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2D0808 !important;
+    transform: scale(1.05);
+}
+
+.btn-lg {
+    border-radius: 5px; /* Menos arredondado para passar mais seriedade */
+    letter-spacing: 1px;
+}
+
+/* Efeito nos itens de serviço */
+.bg-white.shadow-sm {
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.bg-white.shadow-sm:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid var(--cor-dourado);
+}
+
+/* Animação de Fade In */
+.animate-fade-in {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(-20px); }
+}
+
+/* Ajustes de Tipografia SEO */
+.tracking-wider {
+    letter-spacing: 0.2em;
+    font-size: 0.85rem;
+}
+
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* Footer Dark Mode */
+footer {
+    background-color: #1a1a1a !important;
+}
+
+footer img {
+    filter: brightness(0) invert(1); /* Deixa a logo toda branca no rodapé */
+    opacity: 0.8;
+}
