@@ -24,7 +24,6 @@ body {
     border-radius: 10px;
 }
 
-bg-navbar
-{
+.bg-navbar {
     background-color: var(--cor-fundo-navbar) !important;
 }
